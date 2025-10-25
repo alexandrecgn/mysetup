@@ -32,6 +32,7 @@ gnome-shell-extension-manager \
 gimp \
 git \
 git-lfs \
+gh \
 nmap \
 kitty \
 qgis ;
