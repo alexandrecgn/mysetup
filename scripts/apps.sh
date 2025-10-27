@@ -20,6 +20,7 @@ org.chromium.Chromium ;
 sudo apt install -y \
 zsh \
 starship \
+curl \
 tealdeer \
 logiops \
 bat \
