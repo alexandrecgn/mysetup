@@ -19,6 +19,7 @@ org.chromium.Chromium ;
 
 sudo apt install -y \
 zsh \
+imagemagick \
 starship \
 curl \
 tealdeer \
