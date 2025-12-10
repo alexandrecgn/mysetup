@@ -28,6 +28,7 @@ bat \
 btop \
 fzf \
 ripgrep \
+lazygit \
 gnome-tweaks \
 gnome-shell-extensions \
 gnome-shell-extension-manager \
@@ -37,6 +38,8 @@ git-lfs \
 gh \
 nmap \
 kitty \
+openssh-client \
+openssh-server \
 qgis ;
 
 tldr --update
