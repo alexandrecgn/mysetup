@@ -7,9 +7,11 @@ prompt adam1
 setopt histignorealldups sharehistory
 
 # Environment variables
-export EDITOR="nano"
-export LANG="pt_BR.UTF-8"
+export EDITOR="nvim"
 export VISUAL="code"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # Use vim keybindings even if our EDITOR is set to emacs
 bindkey -v
@@ -42,8 +44,13 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+##----------------------SYTAX_HIGHLGHTING-------------
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 ##----------------------ALIAS-------------------------
 alias ls='ls --color=always'
+alias fd='fdfind'
+alias update_all='sudo apt update && sudo apt upgrade -y ; sudo flatpak update -y ; sudo snap refresh'
 
 ##----------------------BAT----------------------------
 alias bat='batcat --theme=gruvbox-dark --color=always --paging=never --plain'
@@ -55,3 +62,6 @@ alias fzf="fzf --preview 'batcat --color=always {}' --preview-window '~3'"
 ##----------------------STARSHIP----------------------
 eval prompt off
 eval "$(starship init zsh)"
+
+##---------------------VICINAE------------------------
+export PATH="$HOME/.local/bin:$PATH"
